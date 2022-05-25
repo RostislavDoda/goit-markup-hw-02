@@ -1,6 +1,12 @@
 :root {
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
+    --colour-black: #000000;
+    --colour-white: #FFFFFF;
+    --colour-main: #212121;
+    --colour-contacts: #757575;
+    --accent-colour:#2196F3;
+    --background-colour: #F5F4FA;
 }
 
 .list {list-style: none;}
@@ -8,7 +14,6 @@
 
 body {font-family: var(--main-font);
     font-size: 14px;
-    color: #FFFFFF;
 }
 
 /* --------------------------- HEADER */
@@ -18,7 +23,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color:var(--accent-colour);
 }
 
 .logo-second {
@@ -27,28 +32,28 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #000000;
+color: var(--colour-black);
 }
 
 .menu-link {
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #212121;
+color: var(--colour-main);
 }
 
 .menu-link:hover,
-.menu-link:focus {color:#2196F3;}
+.menu-link:focus {color:var(--accent-colour);}
 
 .header-contact {
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--colour-contacts);
 }
 
 .header-contact:hover,
-.header-contact:focus {color:#2196F3;}
+.header-contact:focus {color:var(--accent-colour);}
 
 /* --------------------------- /HEADER */
 
@@ -65,10 +70,12 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+color: var(--colour-white);
 }
 
 .modal-btn {
-background-color: #2196F3;
+background-color:var(--accent-colour);
+color:var(--colour-white);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -76,6 +83,8 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+cursor: pointer;
+
 }
 /* --------------------------- /HERO */
 
@@ -83,17 +92,16 @@ letter-spacing: 0.06em;
 
 .advantages-title {
 font-weight: 700;
-line-height: 1.14;
+font-size: 14px;
+line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;}
+color: var(--colour-main);}
 
 .advantages-descriptions {
-font-style: normal;
-font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--colour-contacts);
 }
 /* --------------------------- /ADVANTAGES  */
 
@@ -102,11 +110,11 @@ color: #757575;
 
 /* --------------------------- OUR TEAM  */
 .our-team {
-    background-color:#F5F4FA;
+    background-color: var(--background-colour);
 }
 
 .our-team-item-li {
-    background-color: white;
+    background-color: var(--colour-white);
 }
 
 .our-team-member-name {
@@ -115,17 +123,15 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color:var(--colour-main);
 }
 
 .our-team-member-position {
-font-style: normal;
-font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;}
+color:var(--colour-contacts);}
 
 /* --------------------------- /OUR TEAM  */
 
@@ -138,8 +144,17 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 
+.works-links { 
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--colour-main);    
+}
+
 .works-links:hover,
-.works-links:focus {background:#2196F3;
+.works-links:focus {background:var(--accent-colour);
 color: white;
 cursor:pointer}
 
@@ -148,7 +163,7 @@ cursor:pointer}
 /* -------------------- PORTFOLIO WORKS */
 
 .work-name {
-color: #212121;
+color: var(--colour-main)1;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -158,7 +173,7 @@ letter-spacing: 0.06em;}
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
-color: #757575}
+color: var(--colour-contacts);}
 
 /* -------------------- /PORTFOLIO WORKS*/
 
@@ -167,17 +182,15 @@ color: #757575}
 .footer {background-color: #2F303A;}
 
 .footer-address {
-font-weight: 400;
 font-style: normal;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: white;
+color: var(--colour-white);
 }
 
 .footer-contact {
-font-weight: 400;
-font-style: normal;
 line-height: 1.71;
+font-style: normal;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
@@ -192,7 +205,7 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121; }
     
-.logo-background-dark {color: #FFFFFF;}
-.logo-background-white {color:#000000;}
+.logo-background-dark {color: var(--colour-white);}
+.logo-background-white {color:var(--colour-black);}
     
 /* --------------------------- /COMPONENTS  */
